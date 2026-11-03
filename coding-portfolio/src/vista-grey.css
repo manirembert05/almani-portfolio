@@ -1,0 +1,483 @@
+/* WINDOWS VISTA 2008 — SILVER GREY + PURPLE
+   Overrides the existing style.css and retro-theme.css.
+   All user-edited copy, form fields, and project data remain unchanged. */
+:root {
+ --bg:#c7c9d2; --bg-dark:#8d909e;
+ --window-bg:#f5f4f8; --window-border:#88859c;
+ --window-border-dark:#77738a;
+ --title-start:#f6f4fc; --title-end:#b6a6d4;
+ --title-text:#241b38; --text:#211b2b; --muted:#5b536c;
+ --purple:#7650b9; --purple-dark:#56348f; --link:#62439d;
+ --retro-bg:#c7c9d2; --retro-bg2:#d9d9e2;
+ --retro-panel:#f5f4f8; --retro-panel-deep:#eae7f1;
+ --retro-purple:#7650b9; --retro-purple-strong:#6740a9;
+ --retro-lilac:#6f4ba9; --retro-border:#9385ab;
+ --retro-ink:#211b2b; --retro-muted:#5d526e;
+ --retro-cyan:#7650b9; --retro-pink:#8b67bf;
+ --font-main:'Segoe UI',Tahoma,Verdana,sans-serif;
+ color-scheme:light;
+}
+html,body,#root { min-height:100%; color:#211b2b!important; font-family:'Segoe UI',Tahoma,Verdana,sans-serif!important; }
+html,body { background:#c7c9d2!important; }
+body { background-image:linear-gradient(130deg,#f0f0f4 0%,#c4c5d0 43%,#a4a4b6 100%)!important; background-attachment:fixed!important; }
+body::before { background-image:linear-gradient(#ffffff16 1px,transparent 1px),linear-gradient(90deg,#ffffff16 1px,transparent 1px)!important; opacity:.32; pointer-events:none; }
+#root { background:transparent!important; }
+h1,h2,h3,p, .section-top h2,.cta h2,.hero-copy h1,.about-panel h2,.info-card h3,.project-content h3 {color:#201b2b!important;}
+.hero-copy>p,.section-heading p,.section-top p,.cta p,.about-panel p,.info-card p,.project-content p,.feedback-info p {color:#4e4760!important;}
+.eyebrow,.category,.accent,.accent-icon,.text-link,.project-links a {color:#7149ae!important;}
+.header {background:linear-gradient(#f7f7fb,#d7d8e4 55%,#bcbfd1)!important; border-bottom:1px solid #8e91a5!important; box-shadow:inset 0 1px #fff,0 2px 7px #55556938!important; backdrop-filter:none!important;}
+.brand {color:#211b2b!important;font:700 18px 'Segoe UI',Tahoma,sans-serif!important;gap:9px!important;}
+.brand-icon {width:30px!important;height:30px!important;border-radius:5px!important; background:linear-gradient(#eee6fc,#9675ce)!important; color:#3a255b!important; border:1px solid #73539d!important; box-shadow:inset 1px 1px #fff9,1px 2px 0 #61577330!important;}
+.brand-icon svg {width:18px;height:18px;stroke-width:1.8;}
+.links a {color:#302940!important;}
+.links a:hover,.links a.active {color:#6441a1!important;background:#eee7f7!important;}
+.links .nav-github {color:#382a51!important;background:linear-gradient(#fff,#dcd9e8)!important;border:1px solid #8d829f!important;}
+.menu-button {color:#392752!important;}
+.hero {align-items:start!important;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)!important;gap:25px!important;padding-top:32px!important;min-height:0!important;}
+.hero-copy,.about-panel,.info-card,.feedback-form,.project-card {background:linear-gradient(#fff,#f1eff5)!important;border:1px solid #8b829e!important;color:#211b2b!important;box-shadow:inset 1px 1px #fff,3px 5px 12px #45405230!important;border-radius:5px!important;}
+.hero-copy {padding:28px 30px!important;min-width:0!important;}
+.hero-copy::before {content:'Welcome - Portfolio';display:block;margin:-28px -30px 24px;padding:8px 12px;background:linear-gradient(#f8f4ff,#d0c2e9 48%,#a792cc)!important;color:#2d2243!important;border-bottom:1px solid #8c77b3;font:700 12px Tahoma,sans-serif;}
+.hero h1 {font:600 clamp(30px,3.7vw,52px)/1.16 'Segoe UI',Tahoma,sans-serif!important;letter-spacing:-1px!important;margin:10px 0 18px!important;overflow-wrap:anywhere;}
+.gradient-text,.hero-copy .gradient-text {background:none!important;-webkit-text-fill-color:#7650b9!important;color:#7650b9!important;text-shadow:1px 1px #ffffff!important;}
+.hero-copy>p {font-size:14px!important;line-height:1.65!important;}
+.status {background:#e7e0f0!important;color:#4b3073!important;border:1px solid #b7a2d3!important;}
+.status-dot {background:#8e6ac2!important;box-shadow:none!important;}
+.hero-stats strong,.hero-stats span {color:#312842!important;}
+.hero-stats {margin-top:25px!important;gap:28px!important;}
+.btn,.filter,.menu-button {font-family:Tahoma,'Segoe UI',sans-serif!important;border-radius:3px!important;}
+.btn.primary,.filter.active {background:linear-gradient(#c8b5ee,#8057c5)!important;color:#fff!important;border:1px solid #6846a4!important;box-shadow:inset 1px 1px #fff7!important;}
+.btn.secondary {background:linear-gradient(#fff,#d8d7e1)!important;color:#292239!important;border:1px solid #8c879a!important;}
+.hero-art {min-width:0!important;min-height:380px!important;}
+.orb {display:none!important;}
+.terminal {transform:none!important;border:2px solid #80758d!important;border-radius:5px!important;box-shadow:4px 5px 12px #48405655!important;background:#27242d!important;}
+.terminal::before {content:'developer.js';background:linear-gradient(#f4f1fa,#c1b0dc,#9883bc)!important;color:#281d3d!important;padding:7px 10px!important;}
+.terminal-top {background:#33303d!important;color:#ded5ef!important;}
+.terminal-code {color:#eee7f7!important;white-space:normal!important;overflow-wrap:anywhere;}
+.terminal-code .green {color:#d1b3ff!important;}
+.terminal-code .orange {color:#f5c99a!important;}
+.terminal-prompt {color:#c7a5f7!important;}
+.floating-badge {background:#e9e1f3!important;color:#44315d!important;border:1px solid #aa94c6!important;border-radius:4px!important;}
+.section-muted {background:#dddce6!important;border-top:1px solid #aaa5b6!important;border-bottom:1px solid #aaa5b6!important;}
+.section,.page,.cta {color:#241c31!important;}
+.project-card::before,.info-card::before,.about-panel::before,.feedback-form::before {color:#281d3b!important;background:linear-gradient(#f8f7fd,#d6cce8 50%,#aa99c8)!important;border-bottom:1px solid #9380b3!important;font:700 12px Tahoma,sans-serif!important;padding:8px 12px!important;}
+.about-panel::before {content:'About Me'!important;}
+.about-side .info-card:nth-child(1)::before {content:'Skills.exe'!important;}
+.about-side .info-card:nth-child(2)::before {content:'Motivation.txt'!important;}
+.about-side .info-card:nth-child(3)::before {content:'GitHub.exe'!important;}
+.project-card::before {content:'Project'!important;}
+.feedback-form::before {content:'Send Feedback'!important;}
+.about-panel,.about-side .info-card {padding:24px!important;}
+.about-panel::before,.about-side .info-card::before {margin:-24px -24px 22px!important;}
+.about-avatar {width:150px!important;height:120px!important;min-height:0!important;max-width:100%!important;margin:8px 0 20px!important;border-radius:3px!important;background:linear-gradient(140deg,#eee6f7,#c9b5e2)!important;color:#7650b9!important;}
+.about-avatar svg {width:44px!important;height:44px!important;}
+.info-card h3 {display:flex!important;align-items:center!important;gap:10px!important;margin:0 0 14px!important;font:600 15px 'Segoe UI',Tahoma,sans-serif!important;}
+.info-card h3 svg {flex:none;width:19px!important;height:19px!important;color:#7650b9!important;}
+.chips span {background:#ebe5f3!important;color:#4e386d!important;border:1px solid #b8a6d0!important;}
+.project-visual,.visual-python,.visual-cybersecurity {background:linear-gradient(140deg,#d4c9e5,#a79ac3)!important;}
+.project-glyph {color:#583884!important;background:#eee8f7!important;border-color:#b6a2d3!important;box-shadow:3px 3px #86759b55!important;}
+.visual-number {color:#4e3b69!important;}
+.filter {background:#eeebf3!important;color:#4a3a62!important;border:1px solid #aaa0b8!important;}
+.feedback-form label,.rating-label {color:#30243e!important;}
+.feedback-form input,.feedback-form textarea,.feedback-form select {background:#fff!important;color:#201b2b!important;border:1px solid #8e879e!important;border-radius:2px!important;box-shadow:inset 1px 1px 2px #0002!important;}
+.feedback-form input::placeholder,.feedback-form textarea::placeholder {color:#777084!important;}
+.feedback-form input:focus,.feedback-form textarea:focus,.feedback-form select:focus {border-color:#7951b6!important;box-shadow:0 0 0 2px #b6a0d388!important;}
+.form-note,.optional,.inbox-item small {color:#5d536e!important;}
+.star {color:#aaa1b9!important;}.star.selected {color:#8051b9!important;}
+.footer {background:linear-gradient(#e9e7f0,#b8b4c7)!important;border-top:1px solid #9791a7!important;}
+.footer-inner {color:#423750!important;}
+@media(max-width:900px){.hero{grid-template-columns:1fr!important;}.hero-art{min-height:330px!important;}}
+@media(max-width:640px){.hero-copy{padding:20px!important;}.hero-copy::before{margin:-20px -20px 20px!important;}.about-panel,.about-side .info-card{padding:18px!important;}.about-panel::before,.about-side .info-card::before{margin:-18px -18px 18px!important;}.links.open{background:#e5e0ed!important;border-bottom:1px solid #9b8eb0!important;}.hero h1{font-size:clamp(29px,8vw,42px)!important;}.hero-art{min-height:300px!important;}}
+
+/* ===================================
+   WINDOWS VISTA - ABOUT PAGE CLEANUP
+   =================================== */
+
+/* Balance the two columns */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+  align-items: start;
+}
+
+/* Give each window a consistent frame */
+.about-panel,
+.about-side .info-card {
+  position: relative;
+  background: linear-gradient(
+    180deg, #ffffff, #f3f0f8
+  ) !important;
+  border: 1px solid #9185aa !important;
+  border-radius: 6px !important;
+  padding: 0 22px 24px !important;
+  box-shadow: 0 5px 12px rgba(35, 24, 60, 0.15);
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+/* Full-width Vista title bars */
+.about-panel::before,
+.about-side .info-card::before {
+  display: block !important;
+  position: static !important;
+  width: auto !important;
+  box-sizing: border-box;
+  margin: 0 -22px 22px !important;
+  padding: 9px 13px !important;
+  background: linear-gradient(
+    180deg,
+    #f7f3ff 0%,
+    #d9c8f0 48%,
+    #a993d0 100%
+  ) !important;
+  color: #241b37 !important;
+  font: bold 12px Tahoma, sans-serif !important;
+  border-bottom: 1px solid #9580b6;
+  border-radius: 5px 5px 0 0 !important;
+  text-align: left;
+}
+
+/* Smaller About illustration */
+.about-avatar {
+  width: 125px !important;
+  height: 105px !important;
+  min-height: 0 !important;
+  margin: 0 0 20px !important;
+  padding: 12px !important;
+  border-radius: 3px !important;
+}
+
+.about-avatar svg {
+  width: 43px !important;
+  height: 43px !important;
+}
+
+/* Consistent headings and icon alignment */
+.about-side .info-card h3 {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+  color: #21192f !important;
+  font: 600 16px "Segoe UI", Tahoma, sans-serif !important;
+}
+
+.about-side .info-card h3 svg {
+  display: block;
+  width: 19px !important;
+  height: 19px !important;
+  flex-shrink: 0;
+  color: #7951be !important;
+}
+
+/* Consistent spacing between right panels */
+.about-side {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Improve paragraph readability */
+.about-panel p,
+.about-side .info-card p {
+  color: #342c45 !important;
+  line-height: 1.7;
+}
+
+/* Skill badges */
+.about-side .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.about-side .chips span {
+  background: #eee7f8;
+  color: #49346f;
+  border: 1px solid #b9a4d8;
+  border-radius: 3px;
+  padding: 7px 11px;
+  font: 12px Tahoma, sans-serif;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .about-panel,
+  .about-side .info-card {
+    padding: 0 18px 22px !important;
+  }
+
+  .about-panel::before,
+  .about-side .info-card::before {
+    margin: 0 -18px 20px !important;
+  }
+}
+
+/* Individual window titles */
+
+.about-panel::before {
+  content: "About Me" !important;
+}
+
+.about-side .info-card:nth-child(1)::before {
+  content: "Skills.exe" !important;
+}
+
+.about-side .info-card:nth-child(2)::before {
+  content: "Motivation.txt" !important;
+}
+
+.about-side .info-card:nth-child(3)::before {
+  content: "GitHub.exe" !important;
+}
+
+/* WINDOWS VISTA BUTTON SHADOWS */
+
+.btn.primary,
+button.btn.primary,
+a.btn.primary {
+  background: linear-gradient(
+    to bottom,
+    #d0b7ff 0%,
+    #a47ae4 45%,
+    #8050c5 100%
+  ) !important;
+
+  color: #ffffff !important;
+
+  border: 1px solid #6d45a7 !important;
+  border-radius: 3px !important;
+
+  box-shadow:
+    inset 1px 1px 0 #f0e4ff,
+    inset -1px -1px 0 #653a9b,
+    4px 4px 0 #21172f !important;
+
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+
+  transition: transform 0.1s ease,
+              box-shadow 0.1s ease;
+}
+
+/* Button hover */
+.btn.primary:hover {
+  background: linear-gradient(
+    to bottom,
+    #e0ccff,
+    #9463d5
+  ) !important;
+
+  box-shadow:
+    inset 1px 1px 0 #ffffff,
+    inset -1px -1px 0 #60348f,
+    5px 5px 0 #21172f !important;
+}
+
+/* Pressed button effect */
+.btn.primary:active {
+  transform: translate(3px, 3px);
+
+  box-shadow:
+    inset 1px 1px 3px #56327d,
+    1px 1px 0 #21172f !important;
+}
+
+/* =========================================
+   WINDOWS VISTA RESUME & EDUCATION TILES
+   ========================================= */
+
+/* Main tile frames */
+.resume-tile,
+.education-window {
+  display: block !important;
+  width: 100%;
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f2eef8 100%
+  ) !important;
+
+  border: 1px solid #9784b5 !important;
+  border-radius: 7px !important;
+
+  box-shadow:
+    inset 0 1px 0 #ffffff,
+    0 5px 14px rgba(40, 25, 65, 0.22) !important;
+
+  overflow: hidden;
+  color: #261c38 !important;
+}
+
+/* Full-width purple Vista title bars */
+.resume-tile .resume-titlebar,
+.education-window .resume-titlebar {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 10px 14px !important;
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    to bottom,
+    #faf7ff 0%,
+    #d9c7f0 48%,
+    #a58bce 100%
+  ) !important;
+
+  border-bottom: 1px solid #8f77b4;
+  color: #251a38 !important;
+
+  font: bold 12px Tahoma, sans-serif !important;
+}
+
+/* Resume content area */
+.resume-tile .resume-content {
+  display: flex !important;
+  align-items: center;
+  gap: 24px;
+
+  padding: 28px !important;
+  background: transparent !important;
+}
+
+/* PDF file illustration */
+.resume-tile .resume-icon {
+  display: grid !important;
+  place-items: center;
+
+  flex-shrink: 0;
+  width: 85px;
+  height: 105px;
+
+  background: linear-gradient(
+    135deg,
+    #f5eeff,
+    #d6c2ed
+  ) !important;
+
+  border: 1px solid #9272c0;
+  border-radius: 3px;
+
+  color: #7446b4 !important;
+  font: bold 22px Tahoma, sans-serif;
+
+  box-shadow: 3px 3px 0 #c6b5d9;
+}
+
+/* Resume text */
+.resume-tile h2 {
+  color: #251a38 !important;
+  font-size: 25px;
+  margin: 0 0 12px;
+}
+
+.resume-tile p {
+  color: #4b3c61 !important;
+  line-height: 1.6;
+}
+
+/* Resume action buttons */
+.resume-buttons {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+/* Larger resume tile on About page */
+.resume-large {
+  margin-top: 28px;
+}
+
+.resume-large .resume-content {
+  min-height: 210px;
+  padding: 36px !important;
+}
+
+/* Education tile spacing */
+.education-window {
+  margin-top: 26px;
+  margin-bottom: 32px;
+}
+
+/* Education content area */
+.education-window .education-content {
+  padding: 28px !important;
+  background: transparent !important;
+}
+
+/* Education heading */
+.education-content h2 {
+  margin: 0 0 22px;
+  color: #251a38 !important;
+  font-size: 23px;
+}
+
+/* Individual school entries */
+.education-item {
+  padding: 16px 18px !important;
+  margin-bottom: 14px;
+
+  background: #ffffff !important;
+
+  border: 1px solid #d3c4e6;
+  border-left: 4px solid #8b5ac7;
+  border-radius: 4px;
+
+  box-shadow: 2px 2px 0 rgba(80, 54, 116, 0.10);
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+.education-item h3 {
+  color: #7149ad !important;
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+
+.education-item p {
+  color: #453653 !important;
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+/* Responsive layout */
+@media (max-width: 650px) {
+  .resume-tile .resume-content {
+    padding: 18px !important;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .resume-tile .resume-icon {
+    width: 60px;
+    height: 80px;
+    font-size: 16px;
+  }
+
+  .resume-large .resume-content {
+    padding: 20px !important;
+    min-height: 0;
+  }
+
+  .education-window .education-content {
+    padding: 18px !important;
+  }
+
+  .education-item {
+    padding: 14px !important;
+  }
+}

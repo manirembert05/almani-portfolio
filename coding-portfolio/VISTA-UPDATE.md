@@ -1,0 +1,1 @@
+Windows Vista grey update. Existing page copy and feedback fields preserved. Open the coding-portfolio folder (the one containing package.json), run npm.cmd install and npm.cmd run dev. New override is src/vista-grey.css, imported after other stylesheets. Header suffix .dev removed; icon changed to Monitor. The original theme files are retained.
